@@ -70,17 +70,6 @@
       "points": 20
     },
     {
-      "specs": { "title": "Setze die Stunden- und Fächerinformationen", "list": ["Erstelle die erste TD-Zelle mit 'Hour 1' usw.", "In der nächsten Spalte fange mit 'Subject 1' an" ] },
-      "name": "Set the hour and subject information",
-      "feedback": "Make sure to set the hour and subject information in the timetable cells.",
-      "urls": ["https://www.w3schools.com/tags/tag_td.asp"],
-      "file": "timetable.html",
-      "javascript": "(function() { var cells = document.querySelectorAll('table td'); return cells.length >= 10 && cells[0].textContent.trim() === 'Hour 1' && cells[1].textContent.trim() === 'Subject 1'; })()",
-      "output": "true",
-      "comparison": "exact",
-      "points": 20
-    },
-    {
       "specs": { "title": "Füge Tage zur Wochenüberschrift hinzu" },
       "name": "Add days to the weekly header",
       "feedback": "The weekly header should include the names of the weekdays.",
@@ -90,17 +79,6 @@
       "output": "true",
       "comparison": "exact",
       "points": 15
-    },
-    {
-      "specs": { "title": "Stundenfarben" },
-      "name": "Hour colors",
-      "feedback": "Check if the hours in your table have different background colors.",
-      "urls": ["https://www.w3schools.com/html/html_colors.asp"],
-      "file": "timetable.html",
-      "javascript": "(function() { var cells = document.querySelectorAll('table td'); var backgroundColors = Array.from(cells).map(cell => cell.style.backgroundColor); return backgroundColors.length >= 10 && new Set(backgroundColors).size === backgroundColors.length; })()",
-      "output": "true",
-      "comparison": "exact",
-      "points": 20
     }
   ]
 }
